@@ -22,7 +22,7 @@
           "ec2-35-181-44-207.eu-west-3.compute.amazonaws.com"
         ],
         // Branch
-        "ref": "origin/develop",
+        "ref": "origin/master",
         // Git repository to clone
         "repo": "git@github.com:kobinahum/epicure-server.git",
         // Path of the application on target servers
