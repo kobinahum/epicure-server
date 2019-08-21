@@ -1,0 +1,43 @@
+{
+    // Applications part
+    "apps": [
+      {
+        "name": "GeoTours",
+        "script": "./dist/server.js",
+        // Environment variables injected when starting with --env production
+        // http://pm2.keymetrics.io/docs/usage/application-declaration/#switching-to-different-environments
+        "env": {
+          // "NODE_ENV": "development"
+        }
+      }
+    ],
+    // Deployment part
+    // Here you describe each environment
+    "deploy": {
+      "development": {
+        "key": "~/servers_details/geoTours/dev/geoTours-dev.pem",
+        "user": "ubuntu",
+        // Multi host is possible, just by passing IPs/hostname as an array
+        "host": [
+          "geotours-dev.moveodevelop.com"
+        ],
+        // Branch
+        "ref": "origin/develop",
+        // Git repository to clone
+        "repo": "git@github.com:MoveoTech/GeoTours-Server.git",
+        // Path of the application on target servers
+        "path": "/home/ubuntu/GeoTours-Server",
+        // Can be used to give options in the format used in the configura-
+        // tion file.  This is useful for specifying options for which there
+        // is no separate command-line flag, see 'man ssh'
+        // can be either a single string or an array of strings
+        "ssh_options": "StrictHostKeyChecking=no",
+        // Commands to be executed on the server after the repo has been cloned
+        "post-deploy" : "mkdir -p logs && ./install-build-del-source.sh && pm2 reload ecosystem.json --env development",
+        "pre-deploy-local" : "echo 'Deploying code to servers'",
+        "env": {
+          "NODE_ENV": "development"
+        }
+      }
+    }
+  }

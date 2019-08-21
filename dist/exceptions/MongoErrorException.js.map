@@ -1,0 +1,1 @@
+{"version":3,"file":"MongoErrorException.js","sourceRoot":"","sources":["../../src/exceptions/MongoErrorException.ts"],"names":[],"mappings":";;AAAA,mDAAgD;AAChD,+DAA2D;AAC3D;;GAEG;AACH,MAAa,mBAAoB,SAAQ,6BAAa;IACrD;QACC,KAAK,CAAC,GAAG,EAAE,aAAa,EAAE,wCAAkB,CAAC,KAAK,CAAC,CAAC;IACrD,CAAC;CACD;AAJD,kDAIC"}
