@@ -39,7 +39,7 @@
     "ts-node": "^8.0.2",
     "typescript": "^3.3.1",
     "uniqid": "^5.0.3",
-    "validator": "^11.1.0"
+    "validator": "^13.7.0"
   },
   "apidoc": {
     "name": "Blink API Docs",
