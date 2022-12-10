@@ -28,7 +28,7 @@
     "class-validator": "^0.9.1",
     "config": "^3.0.1",
     "cors": "^2.8.5",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "fs": "0.0.1-security",
     "jsonwebtoken": "^8.4.0",
     "moment": "^2.24.0",
